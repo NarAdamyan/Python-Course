@@ -55,3 +55,4 @@ print(feet)
 var=10
 res=((var**2)**(1/2))%2==False
 print(res*"Even"+(not res) *'Odd')
+
