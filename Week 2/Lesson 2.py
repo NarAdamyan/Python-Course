@@ -77,9 +77,17 @@ Examples
 EXTRA Knowledge """
 
 my_string="22/12/2019"
+
+#First method
+
 my_date=my_string.replace("/","")
 print((my_date[len(my_date)-4:])+(my_date[len(my_date)-6:len(my_date)-4])+my_date[:2])
 
+#second method
+
+my_date=my_string.split("/")
+my_date="".join(my_date[::-1])
+print(my_date)
 
 """9. Create a function that takes two numbers as arguments num, length and returns a list of multiples of num until the list length reaches length.
 Examples
