@@ -92,3 +92,17 @@ my_list=list(range(list_start,list_start*(list_lengh+1),list_start))
 print(my_list)
 
 
+"""10. Create a function that takes a list of numbers lst, a string s and return a list of numbers as per the following rules:
+"Asc" returns a sorted list in ascending order.
+"Des" returns a sorted list in descending order.
+"None" returns a list without any modification.
+Examples
+[4, 3, 2, 1], "Asc"  ➞ [1, 2, 3, 4]
+[7, 8, 11, 66], "Des" ➞ [66, 11, 8, 7]
+[1, 2, 3, 4], "None" ➞ [1, 2, 3, 4] """
+
+my_list=[1,2,67,34]
+rules=input("Please enter the type: ")
+second_list=sorted(my_list)
+print(second_list*(rules=="Asc")+((second_list[::-1])*(rules=="Des"))+(my_list*(rules=="None")))
+
