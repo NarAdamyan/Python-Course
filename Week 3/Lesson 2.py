@@ -1,17 +1,17 @@
-# """EXTRA Knowledge
-# 1. Given three lists of integers: lst1, lst2, lst3, return the sum of integers which are common in all three lists.
-# Examples
-# sum_common([1, 2, 3], [5, 3, 2], [7, 3, 2]) ➞ 5
-# // 2 & 3 are common in all 3 lists.
-# sum_common([1, 2, 2, 3], [5, 3, 2, 2], [7, 3, 2, 2]) ➞ 7
-# // 2, 2 & 3 are common in all 3 lists.
-# sum_common([1], [1], [2]) ➞ 0 """
+"""EXTRA Knowledge
+1. Given three lists of integers: lst1, lst2, lst3, return the sum of integers which are common in all three lists.
+Examples
+sum_common([1, 2, 3], [5, 3, 2], [7, 3, 2]) ➞ 5
+// 2 & 3 are common in all 3 lists.
+sum_common([1, 2, 2, 3], [5, 3, 2, 2], [7, 3, 2, 2]) ➞ 7
+// 2, 2 & 3 are common in all 3 lists.
+sum_common([1], [1], [2]) ➞ 0 """
 
-# lst1=[1]
-# lst2=[5]
-# lst3=[7]
-# sum_list=set(lst1).intersection(set(lst2)).intersection(set(lst3))
-# print(sum(sum_list))
+lst1=[1, 2, 2, 3]
+lst2=[5, 3, 2, 2]
+lst3=[7, 3, 2, 2]
+sum_list=set(lst1).intersection(set(lst2)).intersection(set(lst3))
+print(sum(sum_list))
 
 """2. Write a function that takes a list of numbers and returns a list with two elements:
 The first element should be the sum of all even numbers in the list.
