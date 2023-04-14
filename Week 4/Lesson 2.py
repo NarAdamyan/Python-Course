@@ -245,5 +245,14 @@ def arithmetic_operation(math_oper:str):
         return f"{my_list[0]}//{my_list[-1]}={int(my_list[0])/int(my_list[-1])}"
 
 
-print(arithmetic_operation("12 // 0"))           
+print(arithmetic_operation("12 // 0"))         
+
+
+def swap(a:int,b:int,c:int):
+
+    return (a==c)*b+(b==c)*a
+
+print(swap(2,1,1))
+    
+
  
