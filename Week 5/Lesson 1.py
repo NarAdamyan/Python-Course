@@ -134,7 +134,9 @@ def absolute(text:str):
             return " ".join(mytext)
         else:
             return text
-print(absolute("A man"))        
+def absolute(text:str):
+    return text.replace("A ","An absolute ").replace("a ","an absolute ")
+print(absolute("I am a champion"))        
 
 
 # """7. Return an Array of Subarrays
